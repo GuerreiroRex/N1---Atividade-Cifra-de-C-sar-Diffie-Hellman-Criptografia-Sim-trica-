@@ -163,14 +163,6 @@ Mensagem enviada criptogradada:  bytearray(b'...')
 
 ---
 
-## Depuração e problemas comuns
-
-* **`ConnectionRefusedError`**: verifique se o servidor está em execução e se a porta `1300` está livre.
-* **Mensagens com caracteres estranhos / `UnicodeDecodeError`**: certifique-se de que o texto é codificado em `utf-8` e que o deslocamento (`K`) não quebra bytes de controle — para produção use esquemas com padding e formatos binários bem definidos.
-* **Firewall / rede**: abra a porta no firewall ou use `localhost` para testes locais.
-
----
-
 ## Testes sugeridos
 
 * Teste handshake trocando `G`/`N` diferentes e verificando que `cliente.K == servidor.K`.
@@ -200,10 +192,3 @@ Mensagem enviada criptogradada:  bytearray(b'...')
 Este projeto está sob a licença **MIT**.
 
 ---
-
-Se quiser, eu também posso:
-
-* Gerar um `requirements.txt` e um `run.sh` (scripts de execução) automaticamente.
-* Converter o conteúdo para um arquivo `README.md` (pronto para baixar).
-
-*Boa sorte e divirta‑se explorando criptografia!* 🐶🔐
